@@ -51,26 +51,7 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Quick stats */}
-      <div className="mt-10 flex flex-wrap gap-4">
-        {[
-          { value: "B.TECH", label: "CSE (AI/ML) Student" },
-          { value: "MECH", label: "Diploma Graduate" },
-          { value: "AI/ML", label: "Specialisation" },
-          { value: "GEN AI", label: "Certified" },
-        ].map((stat) => (
-          <div
-            key={stat.label}
-            className="border-[3px] border-black px-4 py-3"
-            style={{ boxShadow: "4px 4px 0 var(--accent)" }}
-          >
-            <div className="text-xl font-black">{stat.value}</div>
-            <div className="text-xs font-bold uppercase tracking-widest text-black/50">
-              {stat.label}
-            </div>
-          </div>
-        ))}
-      </div>
+
     </section>
   );
 }
