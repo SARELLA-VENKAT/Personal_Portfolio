@@ -52,7 +52,7 @@ export default function Header({ onChaos }: HeaderProps) {
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-2 sm:flex sm:gap-3">
-          {["ABOUT", "CONTACT"].map((item) => (
+          {["WORK", "ABOUT", "CONTACT"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -129,7 +129,7 @@ export default function Header({ onChaos }: HeaderProps) {
         >
           CLOSE ✕
         </button>
-        {["ABOUT", "CONTACT"].map((item) => (
+        {["WORK", "ABOUT", "CONTACT"].map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
