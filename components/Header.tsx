@@ -52,7 +52,7 @@ export default function Header({ onChaos }: HeaderProps) {
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-2 sm:flex sm:gap-3">
-          {["WORK", "ABOUT", "CONTACT"].map((item) => (
+          {["ABOUT", "CONTACT"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -63,14 +63,6 @@ export default function Header({ onChaos }: HeaderProps) {
               {item}
             </a>
           ))}
-          <a
-            href="/roast"
-            onMouseEnter={() => SoundEffects.playTick()}
-            onClick={() => SoundEffects.playTick()}
-            className="border-[3px] border-black px-3 py-1.5 text-xs font-black uppercase transition-colors hover:bg-black hover:text-white"
-          >
-            ROAST 🔥
-          </a>
           <button
             onClick={toggleMute}
             onMouseEnter={() => SoundEffects.playTick()}
@@ -137,7 +129,7 @@ export default function Header({ onChaos }: HeaderProps) {
         >
           CLOSE ✕
         </button>
-        {["WORK", "ABOUT", "CONTACT"].map((item) => (
+        {["ABOUT", "CONTACT"].map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
@@ -151,17 +143,6 @@ export default function Header({ onChaos }: HeaderProps) {
             {item}
           </a>
         ))}
-        <a
-          href="/roast"
-          onClick={() => {
-            setMobileOpen(false);
-            SoundEffects.playTick();
-          }}
-          onMouseEnter={() => SoundEffects.playTick()}
-          className="text-4xl font-black uppercase text-white transition-colors hover:text-[var(--accent)]"
-        >
-          ROAST 🔥
-        </a>
       </div>
     </>
   );
