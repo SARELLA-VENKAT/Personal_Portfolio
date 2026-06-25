@@ -107,13 +107,13 @@ export default function Header({ onChaos }: HeaderProps) {
           </button>
           <button
             onClick={() => {
-              setMobileOpen(true);
+              setMobileOpen(!mobileOpen);
               SoundEffects.playTick();
             }}
-            className="border-[3px] border-black px-2 py-1 text-xs font-black uppercase"
-            aria-label="Open menu"
+            className="border-[3px] border-black px-2 py-1 text-xs font-black uppercase w-8 h-8 flex items-center justify-center"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
-            ☰
+            {mobileOpen ? "✕" : "☰"}
           </button>
         </div>
       </header>
