@@ -177,21 +177,21 @@ export default function RoastPage() {
         <span className="text-xs font-black uppercase tracking-tight">
           SARELLA VENKAT // SITE-ROAST V1.0
         </span>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4 text-xs font-black uppercase">
           <button
             onClick={toggleMute}
             onMouseEnter={() => SoundEffects.playTick()}
-            className="border-[3px] border-black px-3 py-1.5 text-xs font-black uppercase text-black transition-transform hover:-translate-y-0.5 active:translate-y-0"
-            style={{ background: isMuted ? "#e5e5e5" : "var(--accent)" }}
+            className="transition-opacity hover:opacity-60"
             title={isMuted ? "Unmute music" : "Mute music"}
           >
-            {isMuted ? "🔇 MUSIC OFF" : "🔊 MUSIC ON"}
+            {isMuted ? "🔇 MUTED" : "🔊 PLAYING"}
           </button>
+          <span className="text-black/30">|</span>
           <Link
             href="/"
             onMouseEnter={() => SoundEffects.playTick()}
             onClick={() => SoundEffects.playTick()}
-            className="border-[3px] border-black px-3 py-1.5 text-xs font-black uppercase transition-colors hover:bg-black hover:text-white"
+            className="transition-opacity hover:opacity-60"
           >
             ← PORTFOLIO
           </Link>
