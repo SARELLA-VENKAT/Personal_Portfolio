@@ -64,14 +64,12 @@ export default function Header({ onChaos }: HeaderProps) {
             </a>
           ))}
           <a
-            href="https://github.com/SARELLA-VENKAT"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/roast"
             onMouseEnter={() => SoundEffects.playTick()}
             onClick={() => SoundEffects.playTick()}
             className="border-[3px] border-black px-3 py-1.5 text-xs font-black uppercase transition-colors hover:bg-black hover:text-white"
           >
-            GITHUB
+            ROAST 🔥
           </a>
           <button
             onClick={toggleMute}
@@ -154,9 +152,7 @@ export default function Header({ onChaos }: HeaderProps) {
           </a>
         ))}
         <a
-          href="https://github.com/SARELLA-VENKAT"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/roast"
           onClick={() => {
             setMobileOpen(false);
             SoundEffects.playTick();
@@ -164,7 +160,7 @@ export default function Header({ onChaos }: HeaderProps) {
           onMouseEnter={() => SoundEffects.playTick()}
           className="text-4xl font-black uppercase text-white transition-colors hover:text-[var(--accent)]"
         >
-          GITHUB
+          ROAST 🔥
         </a>
       </div>
     </>

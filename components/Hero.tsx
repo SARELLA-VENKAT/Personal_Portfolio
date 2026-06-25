@@ -44,12 +44,10 @@ export default function Hero() {
           START A PROJECT →
         </a>
         <a
-          href="https://github.com/SARELLA-VENKAT"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/roast"
           className="border-[3px] border-black px-7 py-4 text-center text-base font-black uppercase tracking-wider transition-colors hover:bg-black hover:text-white"
         >
-          VIEW GITHUB ↗
+          ROAST MY SITE 🔥
         </a>
       </div>
 
