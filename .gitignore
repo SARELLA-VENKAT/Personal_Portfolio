@@ -42,6 +42,7 @@ next-env.d.ts
 
 # large audio/video assets (source files)
 *.m4a
+!public/bg_music.m4a
 *.mp4
 *.mp3
 *.wav
